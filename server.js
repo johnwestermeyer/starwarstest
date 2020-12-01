@@ -8,7 +8,7 @@ var path = require("path");
 var app = express();
 const cors = require("cors")  // npm i cors
 app.use(cors())
-var PORT = 3000;
+var PORT = process.env.port || 3000;
 
 
 // Sets up the Express app to handle data parsing
